@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <title>Prestige Horizons LLC</title>
   <meta name="description" content="Prestige Horizons helps service-based businesses close more clients and save time by automating intake, follow-up, and workflows using AI." />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -11,7 +14,7 @@
 <body>
   <header>
     <div class="navwrap">
-      <a class="brand" href="index.html"><img class="site-logo" src="assets/Logo2.png" alt="Prestige Horizons LLC logo" width="55" height="48" /> Prestige Horizons LLC</a>
+      <a class="brand" href="index.html"><img class="site-logo" src="assets/prestige-horizons-logo.svg" alt="Prestige Horizons LLC logo" width="55" height="48" /><span>Prestige Horizons LLC</span></a>
       <nav>
         <a href="automation.html">Automation</a>
         <a href="cloud-migrations.html">Cloud Migrations</a>
@@ -21,32 +24,64 @@
   </header>
 
   <main class="container">
-    <span class="badge">AI-Powered Workflow Automation for Service Businesses</span>
-
-    <h1>Turn more inquiries into booked work.</h1>
-    <h3>Prestige Horizons LLC builds AI workflow automation that captures leads, follows up on time, and keeps your pipeline organized.</h3>
-
-    <div class="actions">
-      <a class="button" href="mailto:alarielimited@gmail.com?subject=Free%2015-Minute%20Consultation&body=Hi%20Prestige%20Horizons%2C%0A%0AI%27d%20like%20to%20book%20a%2015-minute%20call.%0A%0ABusiness%20Name%3A%0AWebsite%3A%0AGoal%3A%0A%0ABest%20times%20to%20talk%3A%0A">Book a Free 15-Minute Consultation</a>
-      <a class="button secondary" href="automation.html">See the Automation Package</a>
-    </div>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <span class="badge">AI-Powered Workflow Automation for Service Businesses</span>
+          <h1>Turn more inquiries into booked work.</h1>
+          <h3>Prestige Horizons LLC builds AI workflow automation that captures leads, follows up on time, and keeps your pipeline organized.</h3>
+          <p class="lead">Replace manual follow-up with a reliable system that keeps your team focused on delivery.</p>
+          <div class="actions">
+            <a class="button" href="mailto:alarielimited@gmail.com?subject=Free%2015-Minute%20Consultation&body=Hi%20Prestige%20Horizons%2C%0A%0AI%27d%20like%20to%20book%20a%2015-minute%20call.%0A%0ABusiness%20Name%3A%0AWebsite%3A%0AGoal%3A%0A%0ABest%20times%20to%20talk%3A%0A">Book a Free 15-Minute Consultation</a>
+            <a class="button secondary" href="automation.html">See the Automation Package</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="hero-image" src="assets/ai-orbit.jpg" alt="Earth horizon with orbital glow" width="560" height="420" decoding="async" fetchpriority="high" />
+          <div class="card hero-card">
+            <p class="small"><strong>Automation flow</strong></p>
+            <ul>
+              <li>Lead captured</li>
+              <li>AI qualifies + tags</li>
+              <li>Follow-up sent</li>
+              <li>Booked on calendar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <h2>Where leads and time get lost</h2>
       <div class="grid">
         <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 6h14v12H5z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 9h8M8 13h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
           <strong>Manual intake</strong>
           <p class="small">Leads come in, but details are incomplete, scattered, or missed.</p>
         </div>
         <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 12h16M12 4v16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
           <strong>Inconsistent follow-up</strong>
           <p class="small">Slow replies and dropped threads quietly kill conversions.</p>
         </div>
         <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h6v10H4zM14 7h6v10h-6z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
           <strong>Disorganized pipeline</strong>
           <p class="small">No clear stages, no accountability, no reliable reporting.</p>
         </div>
         <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 7l10 10M17 7l-10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
           <strong>Too much admin work</strong>
           <p class="small">Repetitive tasks steal time from revenue-generating work.</p>
         </div>
@@ -55,16 +90,53 @@
 
     <section>
       <h2>Systems we build for faster conversion</h2>
-      <div class="card">
-        <ul>
-          <li>AI-powered client intake and qualification</li>
-          <li>Automated email follow-up (and optional SMS)</li>
-          <li>Lead routing and notifications so nothing gets missed</li>
-          <li>CRM pipeline setup for clear stages and ownership</li>
-          <li>Workflow automation tailored to your business</li>
-        </ul>
+      <div class="grid">
+        <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 5h12v14H6z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M9 9h6M9 13h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <strong>AI-powered intake + qualification</strong>
+          <p class="small">Structured forms or AI-assisted intake that captures the right details.</p>
+        </div>
+        <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16v8H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M4 8l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <strong>Automated follow-up</strong>
+          <p class="small">Email sequences with optional SMS to keep momentum moving.</p>
+        </div>
+        <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M12 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+          <strong>Lead routing + alerts</strong>
+          <p class="small">Immediate handoff to the right person with clear notifications.</p>
+        </div>
+        <div class="card span-6">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16v4H4zM4 14h10v4H4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+          <strong>CRM pipeline structure</strong>
+          <p class="small">Clear stages, ownership, and visibility across every deal.</p>
+        </div>
+        <div class="card span-12">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19V5h14v14" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <strong>Tailored workflow automation</strong>
+          <p class="small">Operational tasks automated end-to-end so your team stays focused.</p>
+        </div>
       </div>
       <p class="small">The goal is clear: faster response times, fewer dropped leads, and a pipeline you can trust.</p>
+      <div class="card support-card">
+        <img class="support-image" src="assets/space-hero.jpg" alt="Nebula space cloud" width="1000" height="620" loading="lazy" decoding="async" />
+        <p class="small">A unified system replaces scattered tools and manual handoffs.</p>
+      </div>
     </section>
 
     <section>
@@ -95,7 +167,20 @@
     </section>
 
     <footer>
-      <p><strong>Prestige Horizons LLC</strong> — AI Workflow Automation for Service Businesses</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="site-logo" src="assets/prestige-horizons-logo.svg" alt="Prestige Horizons LLC logo" width="55" height="48" />
+          <div>
+            <p><strong>Prestige Horizons LLC</strong> — AI Workflow Automation for Service Businesses</p>
+            <p class="small">Premium systems for faster response, cleaner pipelines, and fewer missed leads.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="automation.html">Automation</a>
+          <a href="cloud-migrations.html">Cloud Migrations</a>
+          <a href="mailto:alarielimited@gmail.com?subject=Free%2015-Minute%20Consultation&body=Hi%20Prestige%20Horizons%2C%0A%0AI%27d%20like%20to%20book%20a%2015-minute%20call.%0A%0ABusiness%20Name%3A%0AWebsite%3A%0AGoal%3A%0A%0ABest%20times%20to%20talk%3A%0A">Book a Call</a>
+        </div>
+      </div>
       <p>© Prestige Horizons LLC</p>
     </footer>
   </main>
