@@ -173,14 +173,14 @@
     font-weight: 600;
   }
 
-  .logo-lockup {
-    height: 34px;
+  .logo-image {
+    height: 36px;
     width: auto;
+    display: block;
   }
 
-  .logo-mark {
-    height: 32px;
-    width: 32px;
+  .logo-image--small {
+    height: 40px;
   }
 
   .nav-links {
@@ -428,10 +428,6 @@
     }
   }
 
-  .brand .logo-mark {
-    display: none;
-  }
-
   @media (max-width: 720px) {
     .nav {
       flex-direction: column;
@@ -443,12 +439,8 @@
       justify-content: flex-start;
     }
 
-    .brand .logo-lockup {
-      display: none;
-    }
-
-    .brand .logo-mark {
-      display: block;
+    .logo-image {
+      height: 32px;
     }
   }
 
