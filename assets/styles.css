@@ -177,14 +177,17 @@
   }
 
   .brand__logo {
-    height: 36px;
     width: auto;
     max-height: none;
     display: block;
   }
 
   .brand__logo--small {
-    height: 40px;
+    height: 34px;
+  }
+
+  .site-header .brand__logo {
+    height: 38px;
   }
 
   .nav-links {
@@ -447,8 +450,8 @@
       min-height: 56px;
     }
 
-    .brand__logo {
-      height: 32px;
+    .site-header .brand__logo {
+      height: 30px;
     }
   }
 
