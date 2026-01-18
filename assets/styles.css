@@ -43,13 +43,20 @@
     gap:16px;
   }
   
-  .brand{
-    font-weight:800;
-    letter-spacing:0.2px;
-    text-decoration:none;
-    color:var(--text);
-    white-space:nowrap;
-  }
+.brand{
+  font-weight:800;
+  letter-spacing:0.2px;
+  text-decoration:none;
+  color:var(--text);
+  white-space:nowrap;
+}
+
+.site-logo{
+  height:52px;
+  width:auto;
+  display:inline-block;
+  vertical-align:middle;
+}
   
   nav{
     display:flex;
@@ -142,8 +149,8 @@
   
   .small{ color:var(--muted); font-size:0.98rem; }
   
-  @media (max-width: 720px){
-    h1{ font-size:2.1rem; }
-    .span-6{ grid-column:span 12; }
-  }
-
+@media (max-width: 720px){
+  h1{ font-size:2.1rem; }
+  .span-6{ grid-column:span 12; }
+  .site-logo{ height:40px; }
+}
