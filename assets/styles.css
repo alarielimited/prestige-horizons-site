@@ -150,6 +150,9 @@
     background: rgba(11, 18, 32, 0.92);
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
   }
 
   .site-header.scrolled {
@@ -173,13 +176,14 @@
     font-weight: 600;
   }
 
-  .logo-image {
+  .brand__logo {
     height: 36px;
     width: auto;
+    max-height: none;
     display: block;
   }
 
-  .logo-image--small {
+  .brand__logo--small {
     height: 40px;
   }
 
@@ -439,7 +443,11 @@
       justify-content: flex-start;
     }
 
-    .logo-image {
+    .site-header {
+      min-height: 56px;
+    }
+
+    .brand__logo {
       height: 32px;
     }
   }
