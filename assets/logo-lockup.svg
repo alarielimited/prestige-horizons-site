@@ -1,0 +1,10 @@
+<svg width="260" height="64" viewBox="0 0 260 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+    <path d="M12 38a20 20 0 0 1 40 0" />
+    <path d="M10 38h44" />
+  </g>
+  <circle cx="46" cy="18" r="3" fill="currentColor" />
+  <circle cx="24" cy="38" r="2" fill="currentColor" />
+  <circle cx="36" cy="38" r="2" fill="currentColor" />
+  <text x="72" y="40" fill="currentColor" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" letter-spacing="0.2px">Prestige Horizons</text>
+</svg>
