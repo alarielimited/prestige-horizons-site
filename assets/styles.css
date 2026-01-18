@@ -479,3 +479,43 @@
     align-items: center;
   }
 }
+
+/* ===============================
+   FORCE NAVBAR LOGO VISIBILITY
+   =============================== */
+.brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.brand-logo {
+  height: 56px;
+  width: auto;
+  min-width: 220px;
+  max-width: 280px;
+  object-fit: contain;
+  display: block;
+}
+
+nav, .navbar, .site-nav, header nav {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 40px;
+    min-width: 180px;
+    max-width: 240px;
+  }
+
+  nav, .navbar, .site-nav, header nav {
+    min-height: 72px;
+  }
+}
