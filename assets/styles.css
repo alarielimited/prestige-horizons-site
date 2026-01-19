@@ -3,26 +3,38 @@
 @layer base {
   :root {
     color-scheme: dark;
+
     --color-bg-main: #000000;
-    --color-bg-surface: #0b1220;
-    --color-bg-card: #101a2e;
+    --color-bg-surface: #000000;
+
+    /* Option 1: Deep Slate / Charcoal Blue (replaces the “ugly” blue) */
+    --color-bg-card: #000000;
+
     --color-text-primary: #ffffff;
     --color-text-secondary: #b6c0d1;
     --color-accent-violet: #8b5cf6;
     --color-accent-cyan: #22d3ee;
-    --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+    /* Option 2: Subtle border refinement (slate-tinted vs white) */
+    --color-border-subtle: rgba(148, 163, 184, 0.12);
+
     --bg: var(--color-bg-surface);
     --surface: var(--color-bg-card);
-    --surface-2: #121f33;
+
+    /* Option 1: match inner surfaces to the new slate tone */
+    --surface-2: #000000;
+
     --text: var(--color-text-primary);
     --muted: var(--color-text-secondary);
     --border: var(--color-border-subtle);
     --primary: var(--color-accent-violet);
     --primary-2: var(--color-accent-cyan);
+
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 18px;
     --radius-xl: 26px;
+
     --space-1: 4px;
     --space-2: 8px;
     --space-3: 12px;
@@ -31,8 +43,12 @@
     --space-6: 32px;
     --space-7: 48px;
     --space-8: 64px;
-    --shadow-soft: 0 14px 30px rgba(8, 14, 26, 0.5);
-    --shadow-faint: 0 6px 18px rgba(7, 11, 20, 0.35);
+
+    --shadow-soft: 0 18px 42px rgba(0, 0, 0, 0.55);
+
+    /* Option 3: slightly softer, deeper faint shadow */
+    --shadow-faint: 0 10px 26px rgba(0, 0, 0, 0.42);
+
     --font-heading: "Inter", "Inter Variable", system-ui, sans-serif;
     --font-body: "Inter", "Inter Variable", system-ui, sans-serif;
   }
@@ -257,7 +273,7 @@
     padding: 6px 12px;
     border-radius: 999px;
     border: 1px solid var(--color-border-subtle);
-    background: rgba(18, 28, 45, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: var(--color-text-secondary);
     font-size: 0.8rem;
     font-weight: 600;
@@ -448,7 +464,6 @@
     .site-header {
       min-height: 60px;
     }
-
   }
 
   @media (prefers-reduced-motion: reduce) {
